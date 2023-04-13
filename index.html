@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="container">
+                <div class="child1">
+                    <input type="text" id="mdp">
+                </div>
+                <div class="child2">
+                    <label for="nbreCaracter"> Longueur du Password
+                        <input type="number"  id="nbreCaracter">
+                    </label>
+                    <label for="majuscules">Contient des lettres Majuscules
+                        <input type="checkbox" class="input" id="majuscules">
+
+                    </label>
+                    <label for="minuscules">
+                        Contient des lettres Minuscules
+                        <input type="checkbox" class="input" id="minuscules">
+                    </label>
+                    <label for="nombre">
+                        Contient des Nombres
+                        <input type="checkbox" class="input" id="nombre">
+                    </label>
+                    <label for="caracSpeciaux">
+                        Contient des Caracteres Speciaux
+                        <input type="checkbox" class="input" id="caracSpeciaux">
+                    </label>
+                </div>
+                <div class="child3">
+                    <button id="btnMdp">Generer un mot de passe</button>
+                </div>
+    </div>
+    
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

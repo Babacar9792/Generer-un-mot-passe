@@ -1,0 +1,87 @@
+$bgcolor:#321853;
+$btncolor:#dab86b;
+$inputMdpColor:#62468c;
+$colorWritten:white;
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container
+{
+    height: 60%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: $bgcolor;
+    border: 1em solid $inputMdpColor;
+
+    div 
+    {
+        width: 100%;
+    }
+
+}
+.child1, .child3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+
+.child2
+{
+    height: 60%;
+    label 
+    {
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $colorWritten;
+        font-size: 1.4rem;
+    }
+}
+
+#nbreCaracter
+{
+    width: 12%;
+    height: 50%;
+}.child1 input 
+{
+    width: 80%;
+    height: 70%;
+}
+
+.child3{
+    button 
+    {
+        width: 80%;
+        height: 80%;
+        font-weight: bold;
+        font-size: 1rem;
+        background-color: $btncolor;
+        color: white;
+    }
+}
+
+
+#mdp
+{
+    font-size: 1.4rem;
+    font-weight: bold;
+    background-color: $inputMdpColor;
+    color: $colorWritten;
+}

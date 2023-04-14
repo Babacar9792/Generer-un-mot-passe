@@ -85,3 +85,23 @@ body
     background-color: $inputMdpColor;
     color: $colorWritten;
 }
+
+.fa 
+{
+    position: absolute;
+    top:27%;
+    left:60%;
+}
+
+.fa-copy
+{
+    top: 25%;
+    left: 58%;
+    color: white;
+    // opacity: 0;
+}
+
+#mdp:hover .fa-copy
+{
+    opacity: 1;
+}

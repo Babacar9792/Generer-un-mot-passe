@@ -67,4 +67,20 @@ body {
   font-weight: bold;
   background-color: #62468c;
   color: white;
+}
+
+.fa {
+  position: absolute;
+  top: 27%;
+  left: 60%;
+}
+
+.fa-copy {
+  top: 25%;
+  left: 58%;
+  color: white;
+}
+
+#mdp:hover .fa-copy {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */

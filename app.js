@@ -4,12 +4,31 @@ const majuscules = document.querySelector("#majuscules");
 const minuscules = document.querySelector("#minuscules");
 const nombre = document.querySelector("#nombre");
 const caracSpeciaux = document.querySelector("#caracSpeciaux");
-const mdp = document.querySelector("#mdp")
+const mdp = document.querySelector("#mdp");
+const copy = document.querySelector(".fa-copy");
+const eye = document.querySelector(".fa-eye")
 const Majuscules = "AZERTYUIOPQSDFGHJKLMWXCVBN";
 const Minuscules = "azertyuiopqsdfghjklmwxcvbn";
 const Nombres = "1234567890";
 const caractereSpeciaux = "é#!ù%*$à@=+<>^-"
 
+copy.style.display = "none";
+copy.addEventListener("click",()=>
+{
+    console.log("copie")
+    // console.log(mdp.exeCommand('copy'));
+})
+eye.addEventListener("click",()=>
+{
+    if(mdp.type === "text")
+    {
+        mdp.type = "password";
+    }
+    else 
+    {
+        mdp.type = "text";
+    }
+})
 
 btnMdp.addEventListener("click", () => {
     if (nbreCaracter.value == '') {
@@ -22,6 +41,7 @@ btnMdp.addEventListener("click", () => {
             p = p + ischecked(element);
 
         });
+        if(p <= parseInt(nbreCaracter.value)){
         let tabMod = [];
         // console.log(p)
         if (p !== 0) {
@@ -99,12 +119,20 @@ btnMdp.addEventListener("click", () => {
             }
             
            mdp.value = passWord;
+           copy.style.display = "block";
         }
 
         else {
             console.log("veuiller choisir au moins un critere")
+            copy.style.display = "none";
         }
     }
+        else 
+        {
+            console.log("Le nombre de caractère doit etre superieur au nombre de checkbox choisi");
+        }
+    }
+
 
 })
 
@@ -126,10 +154,3 @@ function shuffle(array) {
     }
     return array;
   }
-
-// function melange(tab, p) {
-//     for (i = 0; i < tab.length; i++) {
-
-//     }
-
-// }
